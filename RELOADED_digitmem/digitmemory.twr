@@ -1,0 +1,125 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/Students/Lavrenko/digitmemory/digitmemory.ise -intstyle ise -v 3 -s 6 -xml
+digitmemory digitmemory.ncd -o digitmemory.twr digitmemory.pcf -ucf
+digitmemory.ucf
+
+Design file:              digitmemory.ncd
+Physical constraint file: digitmemory.pcf
+Device,package,speed:     xc2s15,tq144,-6 (PRODUCTION 1.27 2008-01-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+-----------------+------------+------------+------------------+--------+
+                 |  Setup to  |  Hold to   |                  | Clock  |
+Source           | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+-----------------+------------+------------+------------------+--------+
+reset            |    3.349(R)|   -0.372(R)|clk_BUFGP         |   0.000|
+switch_address<0>|    4.624(R)|   -1.156(R)|clk_BUFGP         |   0.000|
+switch_address<1>|    3.859(R)|   -0.921(R)|clk_BUFGP         |   0.000|
+switch_address<2>|    4.123(R)|   -0.636(R)|clk_BUFGP         |   0.000|
+switch_value<0>  |    1.439(R)|   -0.085(R)|clk_BUFGP         |   0.000|
+switch_value<1>  |    1.553(R)|   -0.361(R)|clk_BUFGP         |   0.000|
+switch_value<2>  |    1.610(R)|   -0.498(R)|clk_BUFGP         |   0.000|
+switch_value<3>  |    1.711(R)|   -0.528(R)|clk_BUFGP         |   0.000|
+switch_value<4>  |    1.438(R)|   -0.414(R)|clk_BUFGP         |   0.000|
+switch_value<5>  |    1.413(R)|   -0.273(R)|clk_BUFGP         |   0.000|
+switch_value<6>  |    1.314(R)|   -0.203(R)|clk_BUFGP         |   0.000|
+switch_value<7>  |    1.211(R)|   -0.379(R)|clk_BUFGP         |   0.000|
+writepush        |    3.765(R)|   -1.609(R)|clk_BUFGP         |   0.000|
+-----------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+----------------+------------+------------------+--------+
+                | clk (edge) |                  | Clock  |
+Destination     |   to PAD   |Internal Clock(s) | Phase  |
+----------------+------------+------------------+--------+
+digit_number1<0>|   10.515(R)|clk_BUFGP         |   0.000|
+digit_number1<1>|   10.716(R)|clk_BUFGP         |   0.000|
+digit_number1<2>|   10.354(R)|clk_BUFGP         |   0.000|
+digit_number1<3>|   10.489(R)|clk_BUFGP         |   0.000|
+digit_number1<4>|   10.590(R)|clk_BUFGP         |   0.000|
+digit_number1<5>|   10.497(R)|clk_BUFGP         |   0.000|
+digit_number1<6>|    9.934(R)|clk_BUFGP         |   0.000|
+digit_number2<0>|   10.975(R)|clk_BUFGP         |   0.000|
+digit_number2<1>|   11.454(R)|clk_BUFGP         |   0.000|
+digit_number2<2>|   11.487(R)|clk_BUFGP         |   0.000|
+digit_number2<3>|   11.528(R)|clk_BUFGP         |   0.000|
+digit_number2<4>|   11.721(R)|clk_BUFGP         |   0.000|
+digit_number2<5>|   11.521(R)|clk_BUFGP         |   0.000|
+digit_number2<6>|   11.507(R)|clk_BUFGP         |   0.000|
+----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.898|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+-----------------+---------------+---------+
+Source Pad       |Destination Pad|  Delay  |
+-----------------+---------------+---------+
+switch_address<0>|indicate_led<0>|    8.919|
+switch_address<0>|indicate_led<1>|    9.380|
+switch_address<0>|indicate_led<2>|    9.175|
+switch_address<0>|indicate_led<3>|    9.080|
+switch_address<0>|indicate_led<4>|    9.324|
+switch_address<0>|indicate_led<5>|    9.485|
+switch_address<0>|indicate_led<6>|    9.553|
+switch_address<0>|indicate_led<7>|    9.527|
+switch_address<1>|indicate_led<0>|    9.219|
+switch_address<1>|indicate_led<1>|    9.704|
+switch_address<1>|indicate_led<2>|    9.602|
+switch_address<1>|indicate_led<3>|    9.545|
+switch_address<1>|indicate_led<4>|    9.597|
+switch_address<1>|indicate_led<5>|    9.778|
+switch_address<1>|indicate_led<6>|    9.968|
+switch_address<1>|indicate_led<7>|    9.901|
+switch_address<2>|indicate_led<0>|    8.983|
+switch_address<2>|indicate_led<1>|    9.074|
+switch_address<2>|indicate_led<2>|    9.238|
+switch_address<2>|indicate_led<3>|    9.204|
+switch_address<2>|indicate_led<4>|    9.353|
+switch_address<2>|indicate_led<5>|    9.406|
+switch_address<2>|indicate_led<6>|    9.596|
+switch_address<2>|indicate_led<7>|    9.570|
+-----------------+---------------+---------+
+
+
+Analysis completed Fri May 10 19:13:35 2024 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 63 MB
+
+
+

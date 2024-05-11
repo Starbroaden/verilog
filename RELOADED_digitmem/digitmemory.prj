@@ -1,0 +1,3 @@
+verilog work "hex2seven_seg.v"
+verilog work "decoder.v"
+verilog work "digitmemory.v"

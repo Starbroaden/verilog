@@ -1,0 +1,5 @@
+# begin LFP file C:\Students\Lavrenko\digitmemory\digitmemory.lfp
+designfile digitmemory.v
+parttype xc2s15-6-tq144
+bus_delimiter 1;
+set_busdelim_onsave 1;

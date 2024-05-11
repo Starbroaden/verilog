@@ -1,0 +1,20 @@
+xst -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -ifn "C:/Students/Lavrenko/digitmemory/digitmemory.xst" -ofn "C:/Students/Lavrenko/digitmemory/digitmemory.syr"
+xst -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -ifn "C:/Students/Lavrenko/digitmemory/digitmemory.xst" -ofn "C:/Students/Lavrenko/digitmemory/digitmemory.syr"
+ngdbuild -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s15-tq144-6 "digitmemory.ngc" digitmemory.ngd
+map -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -p xc2s15-tq144-6 -cm area -pr off -k 4 -c 100 -tx off -o digitmemory_map.ncd digitmemory.ngd digitmemory.pcf
+par -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -w -intstyle ise -ol std -t 1 digitmemory_map.ncd digitmemory.ncd digitmemory.pcf
+trce -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -v 3 -s 6 -xml digitmemory digitmemory.ncd -o digitmemory.twr digitmemory.pcf -ucf digitmemory.ucf
+bitgen -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -f digitmemory.ut digitmemory.ncd
+xst -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -ifn "C:/Students/Lavrenko/digitmemory/digitmemory.xst" -ofn "C:/Students/Lavrenko/digitmemory/digitmemory.syr"
+ngdbuild -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s15-tq144-6 "digitmemory.ngc" digitmemory.ngd
+map -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -p xc2s15-tq144-6 -cm area -pr off -k 4 -c 100 -tx off -o digitmemory_map.ncd digitmemory.ngd digitmemory.pcf
+par -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -w -intstyle ise -ol std -t 1 digitmemory_map.ncd digitmemory.ncd digitmemory.pcf
+trce -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -v 3 -s 6 -xml digitmemory digitmemory.ncd -o digitmemory.twr digitmemory.pcf -ucf digitmemory.ucf
+bitgen -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -f digitmemory.ut digitmemory.ncd
+xst -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -ifn "C:/Students/Lavrenko/digitmemory/digitmemory.xst" -ofn "C:/Students/Lavrenko/digitmemory/digitmemory.syr"
+xst -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -ifn "C:/Students/Lavrenko/digitmemory/digitmemory.xst" -ofn "C:/Students/Lavrenko/digitmemory/digitmemory.syr"
+ngdbuild -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s15-tq144-6 "digitmemory.ngc" digitmemory.ngd
+map -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -p xc2s15-tq144-6 -cm area -pr off -k 4 -c 100 -tx off -o digitmemory_map.ncd digitmemory.ngd digitmemory.pcf
+par -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -w -intstyle ise -ol std -t 1 digitmemory_map.ncd digitmemory.ncd digitmemory.pcf
+trce -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -v 3 -s 6 -xml digitmemory digitmemory.ncd -o digitmemory.twr digitmemory.pcf -ucf digitmemory.ucf
+bitgen -ise "C:/Students/Lavrenko/digitmemory/digitmemory.ise" -intstyle ise -f digitmemory.ut digitmemory.ncd

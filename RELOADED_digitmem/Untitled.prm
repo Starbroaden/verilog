@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator K.39
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Students\Lavrenko\digitmemory\//Untitled -u 0 C:/Students/Lavrenko/digitmemory/digitmemory.bit -x xc18v256 
+
+PROM C:\Students\Lavrenko\digitmemory\//Untitled.prm map: Fri May 10 19:14:10 2024
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          32K
+PROM start    0000:0000
+PROM end      0000:7fff
+PROM checksum 003141cf
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0000:6087     May 10 19:13:41 2024 C:/Students/Lavrenko/digitmemory/digitmemory.bit

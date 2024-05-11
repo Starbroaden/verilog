@@ -1,0 +1,166 @@
+Release 10.1.03 Map K.39 (nt)
+Xilinx Mapping Report File for Design 'digitmemory'
+
+Design Information
+------------------
+Command Line   : map -ise C:/Students/Lavrenko/digitmemory/digitmemory.ise
+-intstyle ise -p xc2s15-tq144-6 -cm area -pr off -k 4 -c 100 -tx off -o
+digitmemory_map.ncd digitmemory.ngd digitmemory.pcf 
+Target Device  : xc2s15
+Target Package : tq144
+Target Speed   : -6
+Mapper Version : spartan2 -- $Revision: 1.46.12.2 $
+Mapped Date    : Fri May 10 19:13:09 2024
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:        72 out of    384   18%
+  Number of 4 input LUTs:            62 out of    384   16%
+Logic Distribution:
+    Number of occupied Slices:                          64 out of    192   33%
+    Number of Slices containing only related logic:     64 out of     64  100%
+    Number of Slices containing unrelated logic:         0 out of     64    0%
+        *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:        62 out of    384   16%
+   Number of bonded IOBs:            35 out of     86   40%
+   Number of GCLKs:                   1 out of      4   25%
+   Number of GCLKIOBs:                1 out of      4   25%
+
+Peak Memory Usage:  134 MB
+Total REAL time to MAP completion:  5 secs 
+Total CPU time to MAP completion:   4 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+Section 14 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+
+Section 5 - Removed Logic
+-------------------------
+
+Section 6 - IOB Properties
+--------------------------
+
++------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type    | Direction | IO Standard | Drive    | Slew | Reg (s)  | Resistor | IOB   |
+|                                    |         |           |             | Strength | Rate |          |          | Delay |
++------------------------------------------------------------------------------------------------------------------------+
+| clk                                | GCLKIOB | INPUT     | LVTTL       |          |      |          |          |       |
+| digit_number1<0>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| digit_number1<1>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| digit_number1<2>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| digit_number1<3>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| digit_number1<4>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| digit_number1<5>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| digit_number1<6>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| digit_number2<0>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| digit_number2<1>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| digit_number2<2>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| digit_number2<3>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| digit_number2<4>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| digit_number2<5>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| digit_number2<6>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| indicate_led<0>                    | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| indicate_led<1>                    | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| indicate_led<2>                    | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| indicate_led<3>                    | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| indicate_led<4>                    | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| indicate_led<5>                    | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| indicate_led<6>                    | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| indicate_led<7>                    | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| reset                              | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| switch_address<0>                  | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| switch_address<1>                  | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| switch_address<2>                  | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| switch_value<0>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| switch_value<1>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| switch_value<2>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| switch_value<3>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| switch_value<4>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| switch_value<5>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| switch_value<6>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| switch_value<7>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| writepush                          | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
++------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+No timing report for this architecture.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.
