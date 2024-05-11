@@ -1,0 +1,15 @@
+NUM_USER_FILES
+4
+s
+user_file_1
+digitmemory.v
+s
+user_file_2
+hex2seven_seg.v
+s
+user_file_3
+digitmemory.ucf
+s
+user_file_4
+decoder.v
+s
